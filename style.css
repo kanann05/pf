@@ -5,7 +5,12 @@ html, body {
     box-sizing: border-box;
     overflow-x: hidden; 
     
+    
 }
+html {
+    scroll-behavior: smooth;
+  }
+  
 
 ::-webkit-scrollbar {
     width: 8px; 
@@ -13,8 +18,8 @@ html, body {
   }
   
   ::-webkit-scrollbar-track {
-    background: #f1f1f146; 
-    border-radius: 10px;
+    background: #f1f1f100; 
+    
   }
   
   ::-webkit-scrollbar-thumb {
