@@ -1,0 +1,444 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    
+}
+
+* {
+    box-sizing: border-box; /* Ensures all elements respect the box model */
+}
+
+
+body {
+    background-color: rgb(20, 20, 20);
+    max-width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height : "100vh";
+    max-width: 100vw;
+    overflow: hidden;
+    
+}
+.about-body-wrapper {
+    min-height: 100vh;
+    width : 100vw;
+    position : relative;
+    background : linear-gradient(-45deg, rgb(106, 70, 70) 5%, #3B191B 40%);
+}
+.home-body-wrapper{
+    height : 100vh;
+}
+nav {
+    width: 70%;
+    height: 50px;
+    position: fixed; 
+    backdrop-filter: blur(5px);
+    top: 15px;
+    z-index: 100; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(74, 13, 13, 0.2); 
+    border-radius: 0 0 10px 10px; 
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+}
+.vh101 {
+    background-color: rgba(120, 57, 110, 0.5);
+}
+.vh201 {
+    background-color: rgba(74, 74, 74, 0.5);
+}
+.projects-wrapper{
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    background: radial-gradient(#4f3855 0%, #352C37 90%);
+}
+
+nav a {
+    color: rgb(223, 223, 223);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+nav a:hover {
+    color: rgb(255, 219, 134);
+}
+.about-body-tx  {
+    display: grid; /* Defines the parent as a grid container */
+    grid-template-columns: repeat(3, minmax(45px, 100px)); /* Ensures grid items are between 50px and 120px */
+    gap: 40px; /* Adds spacing between grid items */
+    justify-content: center; 
+    width: 50vw;
+
+}
+.contact-wrapper {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tech-st-title {
+    color : #efffc0;
+    -webkit-text-stroke :#e7ff9e;
+    -webkit-text-stroke-width: 0.3px;
+    font-family: 'lexend';
+}
+.about-body-tx div{
+    position: relative;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: inset rgba(0, 0, 0, 0.4) 3px 3px 12px 1.3px;
+}
+nav {
+    border: solid 1px white;
+    border-radius: 5px;
+}
+/* nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(to right, rgb(255, 225, 159), rgb(239, 255, 203));
+    border-radius: 10px;
+    padding: 1.5px; 
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+} */
+
+.about-me-info {
+    font-family: 'poppins';
+    width: 50%;
+    position: inherit;
+    font-weight: 400;
+    color : #FFE5E5;
+}
+
+.emph {
+    font-weight: 500;
+    color : #FFC6C6;
+    text-decoration: underline;
+}
+
+.tiranga {
+    background: linear-gradient(orange, white, green);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+@media (min-width : 1000px) {
+    .piarn, .vidofy {
+        width : 60%;
+        background-color: #da849c20;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        /* left: 10%; */
+        padding: 30px 20px 30px 30px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: solid #8C6363 2px;
+        margin-top: 80px;
+    }
+    .vidofy {
+        background-color: #b5aa8c20;
+        border: solid #676d52 2px;
+    }
+    .piarn {
+        left : 30%;
+    }
+    .vidofy {
+        left: 10%;
+    }
+    
+    .piarn h2, .vidofy h2 {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    .piarn p, .vidofy p  {
+        font-family: 'poppins';
+        color : white;
+    }
+    .piarn div, .vidofy div {
+        width: 50%;
+    }
+    .tech-st-title {
+        font-size: 3rem;
+    }
+    .about-me-info {
+        font-size: 2rem;
+    }
+    .about-me-title, .projects-title, .contact-title {
+        font-size: 4.5rem;
+    }
+    .about-me-title{
+        margin: 10% 20% 0px;
+    }
+    .projects-title {
+        margin : 10% 20% 0px;
+    }
+    .contact-title {
+        position : relative; top : 10%;margin: 0% 20% 7%; right: 20vw;
+
+    }
+    .home-img-mob {
+        display :none;
+    }
+    .home-body-wrapper {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        align-items: center;
+        gap:100px;
+        background-image: url('bg.jpg');
+        width: 100vw;
+        justify-content: center;
+        object-fit: fit;
+        overflow: hidden;
+        overflow-y: hidden;
+    }
+    .grid {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(15, 1fr); /* 10 columns, equal width */
+    grid-template-rows: repeat(15, 1fr);   /* 10 rows, equal height */
+    width: 100vw; /* Full viewport width */
+    height: 100vw; /* Maintain a square grid */
+    gap: 0; /* Optional: Adjust for spacing between grid items */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+    }
+    .grid-blocks {
+        border : solid rgba(255, 255, 255, 0.42) 1px;
+        background-color: rgba(254, 254, 254, 0.25);
+        opacity: 0.2;
+        transition: opacity 1s ease;
+        /* z-index: 10; */
+    }
+    .hovered {
+        opacity: 0.85;
+    }
+    .home-intro {
+        font-size: 5rem;
+        color : white;
+        font-family: 'poppins';
+        font-weight: 300;
+        letter-spacing: 110%;
+        margin : 0 0 0 0;
+    }
+    .home-img-pc {
+        width: 250px;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+        box-shadow: 0 0 100px -5px rgba(255, 255, 255, 0.336);
+    }
+    .home-name, .about-me-title, .projects-title, .contact-title {
+        /* font-family:'Times New Roman', Times, serif; */
+        font-family: 'lexend';
+        
+        color : rgb(197, 197, 255);
+        background: linear-gradient(90deg, #a3e5ff, #e7ff9e 30%);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        animation:grad-change 10s infinite;
+        text-shadow : 0 0 100px rgb(255, 150, 150);
+    }
+    .home-name {
+        font-size : 7rem;
+    }
+}
+
+
+@media (max-width : 1000px) {
+    .piarn, .vidofy {
+        width : 85%;
+        background-color: #da849c20;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        left: 10%;
+        padding: 30px 20px 30px 30px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: solid #8C6363 2px;
+        margin-top: 80px;
+    }
+    
+    .vidofy {
+        background-color: #dac38420;
+        border: solid #838c63 2px;
+    }
+    
+    .piarn h2, .vidofy h2 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin : 0;
+    }
+    .piarn p, .vidofy p {
+        font-family: 'poppins';
+        color : white;
+    }
+    .piarn div, .vidofy div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav {
+        width: 95vw;
+    }
+    .about-me-title, .projects-title {
+        font-size: 3rem;
+    }
+    .about-me-title{
+        margin: 20% 20% 0;
+    }
+    .projects-title {
+        margin: 20% 20% 0;
+
+    }
+    .contact-title {
+        font-size: 2rem;
+    }
+    .home-body-wrapper {
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .home-img-pc{
+        display: none;
+    }
+    .home-body-wrapper {
+        display : flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-img-mob {
+        display :block;
+        width: 100px;
+        border-radius: 100px;
+        aspect-ratio: 1/1;
+        margin-bottom: 50px;
+    }
+    .home-intro {
+        font-size: max(4rem, 70px);
+        color : white;
+        font-family: 'poppins';
+        font-weight: 300;
+        letter-spacing: 110%;
+        margin : 10px 0 0 0;
+    }
+    .home-name, .about-me-title, .projects-title, .contact-title {
+        /* font-family:'Times New Roman', Times, serif; */
+        font-family: 'lexend';
+        /* font-size : max(5rem, 100px); */
+        color : rgb(197, 197, 255);
+        background: linear-gradient(90deg, #a3e5ff, #e7ff9e 10%);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        animation:grad-change 10s infinite;
+        /* margin: 0 0 0 0; */
+        text-shadow : 0 0 100px rgb(255, 150, 150);
+    }
+    .home-name, .projects-title, .contact-title {
+        font-size: 4rem;
+
+    }
+}
+nav div {
+    background-color: rgba(255, 185, 185, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    width : 12%;
+    outline: none;
+}
+nav a {
+    color : rgb(223, 223, 223);
+    text-decoration: none;
+    transition : color 0.25s ease
+}
+nav a:hover {
+    color : rgb(255, 229, 188);
+}
+
+
+
+.home-body {
+    position: relative;
+   color :white;
+   margin-left: 0;
+   margin-top: 50px;
+   /* font-size : 2.3vw; */
+   display: flex;
+   flex-direction: row;
+   box-sizing: border-box;
+   justify-content: center;
+   align-items: center;
+}
+.home-text {
+    width: 50%;
+  white-space: nowrap; /* Prevents text from wrapping if you want it in a single line */
+  overflow: hidden; /* Optional: hides overflow text */
+  text-overflow: ellipsis; 
+  max-height: 100%;
+}
+.name {
+    font-weight: bold;
+    font-size : 9vw;
+    background: linear-gradient(90deg, #a3e5ff, #e7ff9e 30%);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    animation:grad-change 3s infinite;
+    margin: 0 0 0 0;
+    text-shadow : 0 0 100px rgb(255, 150, 150);
+}
+@keyframes grad-change {
+    0% {
+        filter: hue-rotate(0deg);
+        text-shadow : 0 0 100px rgb(255, 150, 150);
+    }
+    50% {
+        filter : hue-rotate(180deg);
+        text-shadow : 0 0 100px rgb(178, 187, 255);
+    }
+    100% {
+        filter : hue-rotate(0deg);
+        text-shadow : 0 0 100px rgb(255, 150, 150);
+    }
+}
+
+
+.fade-in {
+    opacity: 0; /* Start fully transparent */
+    transform:translateY(20px);
+    transition: opacity 1s ease-in-out, transform 0.5s ease-in-out; /* Smooth transition for opacity */
+  }
+  
+  .fade-in.visible {
+    opacity: 1; /* Fully visible */
+    transform:translateY(0px);
+
+  }
+  
