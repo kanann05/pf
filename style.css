@@ -23,7 +23,7 @@ html {
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #fff9f9; 
+    background: #d7caca; 
     border-radius: 10px; 
   }
   
@@ -227,10 +227,10 @@ nav {
         font-size: 4.5rem;
     }
     .about-me-title{
-        margin: 10% 20% 0px;
+        margin: 7% 20% 0px;
     }
     .projects-title {
-        margin : 10% 20% 0px;
+        margin : 7% 20% 0px;
     }
     .contact-title {
         position : relative; top : 10%;margin: 0% 20% 7%; right: 20vw;
