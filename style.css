@@ -3,12 +3,42 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
     
 }
 
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 5px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f146; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #fff9f9; 
+    border-radius: 10px; 
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+
+  ::-webkit-scrollbar-horizontal {
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-vertical {
+    width: 10px;
+  }
+  
+
 * {
-    box-sizing: border-box; /* Ensures all elements respect the box model */
+    box-sizing: border-box; 
 }
 
 
